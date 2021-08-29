@@ -5,14 +5,17 @@
   font-family: "Poppins", sans-serif;
 }
 .header-container {
+  max-width: 1500px;
   width: 100%;
-  height: 50vh;
+  height: 60vh;
+  background-color: #fafafa;
 }
 
 .content {
   background-image: url("https://cdn.pixabay.com/photo/2021/04/19/12/54/sunset-6191334_1280.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
   height: 50vh;
   width: 100%;
   padding: 60px;

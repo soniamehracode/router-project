@@ -1,8 +1,8 @@
-import "./Posts.css";
+import "./NewPost.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-const Posts = (props) => {
+const NewPost = () => {
   const settings = {
     dots: false,
     infinite: true,
@@ -10,21 +10,21 @@ const Posts = (props) => {
     slidesToShow: 3,
     slidesToScroll: 3,
   };
+
   return (
     <div className="container">
       <div className="blog-container">
-        <div className="post-title">
-          <h2>{props.title}</h2>
-          <p>{props.paragr}</p>
-        </div>
-
         <div className="cards">
           <div className="carosal-card">
-            <img src={props.img} />
-
-            <a href="#" className="card-btn">
-              view all
-            </a>
+            <div className="newcard-heading">
+              <h1 className="cols">ebook</h1>
+              <h1 className="heads">store</h1>
+            </div>
+            <div className="butn-card">
+              <a href="#" className="card-btn">
+                view all
+              </a>
+            </div>
           </div>
 
           <div className="flexbox">
@@ -33,13 +33,16 @@ const Posts = (props) => {
                 <div className="items-img">
                   <img
                     className="carosal-img"
-                    src="https://cdn.pixabay.com/photo/2020/12/06/16/16/cosmos-5809271__480.png"
+                    src="https://cdn.pixabay.com/photo/2016/11/29/06/16/kindle-1867751__480.jpg"
                   />
-                  <h1>Shiljeet pro</h1>
-                  <span>$59.00</span>
+                  <div className="newpost-title">
+                    <h2>born to move</h2>
+                    <span>$59.00</span>
+                    <h3 className="text-span">genesis members: 0</h3>
+                  </div>
 
-                  <div className="cardButton">
-                    <span className="add-btn">Add to cart</span>
+                  <div className="newcardButton">
+                    <span className="addbtn">Add to cart</span>
                   </div>
                 </div>
               </div>
@@ -48,26 +51,13 @@ const Posts = (props) => {
                 <div className="items-img">
                   <img
                     className="carosal-img"
-                    src="https://cdn.pixabay.com/photo/2020/12/06/16/16/cosmos-5809271__480.png"
+                    src="https://cdn.pixabay.com/photo/2016/11/29/06/16/kindle-1867751__480.jpg"
                   />
-
-                  <h1>Shiljeet pro</h1>
-                  <span>$59.00</span>
-
-                  <div className="cardButton">
-                    <span className="add-btn">Add to cart</span>
+                  <div className="newpost-title">
+                    <h1>born to move</h1>
+                    <span>$59.00</span>
+                    <h3 className="text-span">genesis members: 0</h3>
                   </div>
-                </div>
-              </div>
-              <div className="items">
-                <div className="items-img">
-                  <img
-                    className="carosal-img"
-                    src="https://cdn.pixabay.com/photo/2020/12/06/16/16/cosmos-5809271__480.png"
-                  />
-
-                  <h1>Shiljeet pro</h1>
-                  <span>$59.00</span>
 
                   <div className="cardButton">
                     <span className="add-btn">Add to cart</span>
@@ -78,10 +68,13 @@ const Posts = (props) => {
                 <div className="items-img">
                   <img
                     className="carosal-img"
-                    src="https://cdn.pixabay.com/photo/2020/12/06/16/16/cosmos-5809271__480.png"
+                    src="https://cdn.pixabay.com/photo/2016/11/29/06/16/kindle-1867751__480.jpg"
                   />
-                  <h1>Shiljeet pro</h1>
-                  <span>$59.00</span>
+                  <div className="newpost-title">
+                    <h1>born to move</h1>
+                    <span>$59.00</span>
+                    <h3 className="text-span">genesis members: 0</h3>
+                  </div>
 
                   <div className="cardButton">
                     <span className="add-btn">Add to cart</span>
@@ -92,10 +85,30 @@ const Posts = (props) => {
                 <div className="items-img">
                   <img
                     className="carosal-img"
-                    src="https://cdn.pixabay.com/photo/2020/12/06/16/16/cosmos-5809271__480.png"
+                    src="https://cdn.pixabay.com/photo/2016/11/29/06/16/kindle-1867751__480.jpg"
                   />
-                  <h1>Shiljeet pro</h1>
-                  <span>$59.00</span>
+                  <div className="newpost-title">
+                    <h1>born to move</h1>
+                    <span>$59.00</span>
+                    <h3 className="text-span">genesis members: 0</h3>
+                  </div>
+
+                  <div className="cardButton">
+                    <span className="add-btn">Add to cart</span>
+                  </div>
+                </div>
+              </div>
+              <div className="items">
+                <div className="items-img">
+                  <img
+                    className="carosal-img"
+                    src="https://cdn.pixabay.com/photo/2016/11/29/06/16/kindle-1867751__480.jpg"
+                  />
+                  <div className="newpost-title">
+                    <h1>born to move</h1>
+                    <span>$59.00</span>
+                    <h3 className="text-span">genesis members: 0</h3>
+                  </div>
 
                   <div className="cardButton">
                     <span className="add-btn">Add to cart</span>
@@ -110,4 +123,4 @@ const Posts = (props) => {
   );
 };
 
-export default Posts;
+export default NewPost;

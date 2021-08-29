@@ -4,6 +4,7 @@ import Blogs from "../../components/blog/Blogs";
 import FeatureBlog from "../../components/featureblog/FeatureBlog";
 import Posts from "../../components/posts/Posts";
 import Card from "../../components/card/Card";
+import NewPost from "../../components/newpost/NewPost";
 import Footer from "../../components/footer/Footer";
 import Carosal from "../../components/carosal/Carosal";
 const Home = () => {
@@ -15,7 +16,7 @@ const Home = () => {
         paragraph="beautifuly crafted motivational products,for your daily boost off inspiration"
         button="get started"
       />
-      <div className="Home">
+      <div>
         <Blogs />
         <FeatureBlog />
         <Posts
@@ -35,7 +36,7 @@ const Home = () => {
           btn="play now"
           bttn="play now"
         />
-        <Posts />
+        <NewPost />
         <Carosal
           title="india's most extensive"
           para="personalized online training program"
@@ -43,7 +44,7 @@ const Home = () => {
           button="know more"
         />
 
-        <Posts />
+        <NewPost />
 
         <Footer />
       </div>

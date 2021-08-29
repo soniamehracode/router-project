@@ -29,14 +29,18 @@ const Carosal = (props) => {
           <div className="contents">
             <span>{props.title}</span>
             <h1>{props.para}</h1>
-            <p>{props.paragraph}</p>
+            <div className="paras">
+              <p>{props.paragraph}</p>
+            </div>
           </div>
         </div>
         <div>
           <div className="contents">
             <span>{props.title}</span>
             <h1>{props.para}</h1>
-            <p>{props.paragraph}</p>
+            <div className="paras">
+              <p>{props.paragraph}</p>
+            </div>
           </div>
         </div>
 
@@ -44,7 +48,9 @@ const Carosal = (props) => {
           <div className="contents">
             <span>{props.title}</span>
             <h1>{props.para}</h1>
-            <p>{props.paragraph}</p>
+            <div className="paras">
+              <p>{props.paragraph}</p>
+            </div>
           </div>
         </div>
       </Slider>

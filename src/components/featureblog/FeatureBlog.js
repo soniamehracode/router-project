@@ -1,9 +1,8 @@
-import React from "react";
 import "./FeatureBlog.css";
 
 const FeatureBlog = () => {
   return (
-    <div className="feature">
+    <div className="container">
       <div className="cont">
         <div className="title">
           <h1>

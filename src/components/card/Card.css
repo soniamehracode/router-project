@@ -2,14 +2,16 @@
   margin: 0;
   padding: 0;
 }
-.cards-container {
-  background-color: #fafafa;
+.cardContainer {
+  margin-top: 50px;
 }
-.card-heading {
+
+.card-heading h2 {
   text-align: center;
-  font-size: 18px;
-  margin: 20px;
-  padding: 50px;
+  font-size: 30px;
+  text-transform: capitalize;
+
+  padding: 30px;
 }
 .card-heading span {
   color: #717cff;
