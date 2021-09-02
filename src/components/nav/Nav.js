@@ -42,8 +42,9 @@ const Nav = (props) => {
         <Link to="/contact">
           <li>Contact Us</li>
         </Link>
-
-        <button className="btn">Login</button>
+        <Link to="/contact">
+          <li className="btn">Login</li>{" "}
+        </Link>
       </ul>
       <button className="menu-icon" onClick={() => setMenu(!menu)}>
         {menu ? (

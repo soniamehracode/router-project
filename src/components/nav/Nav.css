@@ -3,32 +3,75 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 nav {
-  margin: 0px 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  height: 15vh;
+  height: 75px;
   background-color: transparent;
   color: #000;
 }
 .nav-img {
   font-size: 18px;
 }
-nav h3 {
-  color: blue;
-  font-size: 30px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
 }
-nav span {
-  color: black;
-
-  font-size: 30px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+nav li {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
 }
-.nav-links {
+.btn {
+  border-radius: 5px;
+  border-color: blue;
+  border: 1px solid blue;
+}
+.menu-icon {
+  display: none;
+}
+@media screen and (max-width: 780px) {
+  /* .nav-img {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 35px;
+  } */
+  .nav-links {
+    display: none;
+  }
+  .nav-links-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    left: 0;
+    top: 75px;
+    transition: all 0.5s ease-out;
+    width: 100%;
+  }
+  .nav-links li {
+    text-align: center;
+    padding: 32px;
+    width: 100%;
+    transition: all 0.5s ease-out;
+  }
+  .menu-icon {
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    color: #fff;
+    border: none;
+    outline: none;
+    top: 15px;
+    right: 25px;
+  }
+}
+/* .nav-links {
   width: 75%;
   display: flex;
   justify-content: space-between;
@@ -56,13 +99,8 @@ nav span {
 .menu-icon {
   display: none;
 }
+
 @media screen and (max-width: 780px) {
-  nav h3 {
-    display: flex;
-    position: absolute;
-    top: 15px;
-    left: 35px;
-  }
   .nav-links {
     display: none;
   }
@@ -101,4 +139,4 @@ nav span {
     top: 15px;
     right: 25px;
   }
-}
+} */
