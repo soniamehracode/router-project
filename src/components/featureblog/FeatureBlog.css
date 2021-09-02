@@ -23,11 +23,13 @@
 img {
   width: 100%;
 }
-.blog-post {
-  display: flex;
-}
 
 /* sidebar */
+
+.section_featured {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 .sidebar {
   width: 40%;
@@ -37,9 +39,9 @@ img {
   display: flex;
 }
 .blog-post {
+  display: flex;
   width: 50%;
-  margin: 15px;
-  padding-left: 30px;
+  margin-right: 15px;
 }
 .para {
   display: flex;

@@ -15,7 +15,7 @@ const Header = (props) => {
     slidesToScroll: 1,
   };
   return (
-    <div className="header-container">
+    <div className="wrs_section_1 header-container">
       <Slider {...settings}>
         <div>
           <div className="content">

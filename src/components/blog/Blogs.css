@@ -3,18 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-.container {
-  width: 100%;
-  padding: 15px;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  background-color: #fafafa;
+.section_universe {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-.blog-container {
-  margin: 0 auto;
-  max-width: 1250px;
-}
-.blog-container h1 {
+.h1 {
   /* font-size: 20px; */
   line-height: 2rem;
   font-weight: bold;

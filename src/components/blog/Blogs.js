@@ -1,10 +1,11 @@
 import React from "react";
 import "./Blogs.css";
+import "../../App.css";
 
 const Blog = () => {
   return (
-    <div className="container">
-      <div className="blog-container">
+    <div className="wrs_section_1 section_universe">
+      <div className=" wrs_container">
         <h1>the we r stupid universe</h1>
 
         <div className="cards">
