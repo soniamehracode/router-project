@@ -1,6 +1,8 @@
 import "./Posts.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "../../App.css";
+
 import Slider from "react-slick";
 const Posts = (props) => {
   const settings = {
@@ -11,9 +13,9 @@ const Posts = (props) => {
     slidesToScroll: 3,
   };
   return (
-    <div className="container">
-      <div className="blog-container">
-        <div className="post-title">
+    <div className="wrs_section_1 section_posts">
+      <div className="wrs_container">
+        <div className="">
           <h2>{props.title}</h2>
           <p>{props.paragr}</p>
         </div>

@@ -2,8 +2,9 @@
   margin: 0;
   padding: 0;
 }
-.cardContainer {
-  margin-top: 50px;
+.section_videos {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .card-heading h2 {

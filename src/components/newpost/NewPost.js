@@ -12,8 +12,8 @@ const NewPost = () => {
   };
 
   return (
-    <div className="container">
-      <div className="blog-container">
+    <div className="section_newpost">
+      <div className="wrs_container">
         <div className="cards">
           <div className="carosal-card">
             <div className="newcard-heading">

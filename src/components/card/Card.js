@@ -1,8 +1,10 @@
 import "./Card.css";
+import "../../App.css";
+
 const Card = (props) => {
   return (
-    <div className="cardContainer">
-      <div className="blog-container">
+    <div className="wrs_section_2 section_videos">
+      <div className="wrs_container">
         <div className="card-heading">
           <h2>
             featured <span>vedios</span>
