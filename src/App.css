@@ -1,8 +1,12 @@
 .wrs_container {
   width: 100%;
-  max-width: 1500px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  /* padding-left: 1.5rem;
+  padding-right: 1.5rem; */
+  padding-bottom: 3.75rem;
+  padding-top: 3.75rem;
 }
 .wrs_section_1 {
   width: 100%;

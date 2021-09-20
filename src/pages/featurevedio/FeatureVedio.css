@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.section_videos {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.card-heading h2 {
+  text-align: center;
+  font-size: 30px;
+  text-transform: capitalize;
+  padding: 30px;
+}
+.card-heading span {
+  color: #717cff;
+}
+.card-img {
+  max-width: 100%;
+  height: auto;
+  padding: 20px;
+}
+.card-container {
+  justify-content: center;
+  align-items: center;
+
+  display: flex;
+}
+.card-box {
+  width: 33%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: #fafafa;
+  margin-bottom: 0px;
+}
+.card_box {
+  /* background-color: rgba(255, 255, 255); */
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0 6px 42px rgba(0, 0, 0, 0.12);
+  border-radius: 1rem;
+}
+.card_box img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.card-button {
+  justify-content: space-between;
+}
+.card-bt {
+  display: flex;
+  line-height: 2rem;
+  justify-content: space-between;
+}
+.card-title {
+  padding: 1.5rem;
+  flex-direction: column;
+  display: flex;
+}
+.card-button div {
+  color: rgba(79, 91, 232);
+  border: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px;
+}
+.card-button {
+  justify-content: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  align-items: center;
+  text-transform: capitalize;
+}
+.card-title h3 {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 2rem;
+  color: rgba(55, 55, 55);
+}
+.card-title p {
+  padding: 10px;
+  font-size: 16px;
+  text-align: justify;
+  color: rgba(115, 115, 115);
+
+  font-weight: 300;
+}
+
+.card-bt span {
+  text-align: right;
+  color: rgba(115, 115, 115);
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 850px) {
+  .card-container {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .card-box {
+    width: 50%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 2rem;
+  }
+  .card-title h3 {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+  }
+}

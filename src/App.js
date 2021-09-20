@@ -1,23 +1,28 @@
-import Home from "./pages/home/Home";
+import React from "react";
 import Nav from "./components/nav/Nav";
-import About from "./pages/about/About";
-import Blog from "./pages/Blog";
-import Contact from "./pages/contact/Contact";
-import SinglePost from "./pages/singlepost/SinglePost";
+import Blog from "./components/blog/Blog";
+import About from "./components/about/About";
+import Contact from "./components/contact/Contact";
+import Company from "./components/company/Company";
+import Shop from "./components/shop/Shop";
+import OnlineTraining from "./components/online/OnlineTraining";
+import Login from "./components/login/Login";
+import Home from "./pages/home/Home";
+import Footer from "./pages/footer/Footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 function App() {
   return (
-    <Router>
-      <div className="App">
+    <div>
+      <Router>
         <Nav />
 
         <Switch>
           <Route path="/" exact>
             <Home />
           </Route>
-          <Route path="/blogData">
+          <Route path="/blog">
             <Blog />
-            <SinglePost />
           </Route>
           <Route path="/about">
             <About />
@@ -25,9 +30,22 @@ function App() {
           <Route path="/contact">
             <Contact />
           </Route>
+          <Route path="/OnlineTraining">
+            <OnlineTraining />
+          </Route>
+          <Route path="/company">
+            <Company />
+          </Route>
+          <Route path="/shop">
+            <Shop />
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
         </Switch>
-      </div>
-    </Router>
+        {/* <Footer /> */}
+      </Router>
+    </div>
   );
 }
 

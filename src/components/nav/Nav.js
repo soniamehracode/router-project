@@ -1,59 +1,72 @@
 import "./Nav.css";
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Nav = (props) => {
-  const [menu, setMenu] = useState(false);
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
   return (
-    <nav>
-      <Link to="/">
-        <img
-          className="nav-img"
-          src="https://werstupid.netlify.app/images/company_logo.png"
-        />
-      </Link>
+    <div className="navbar-list">
+      <nav className="navbar">
+        <div className="navbar-container">
+          <div className="nav-logo">
+            <Link to="/" className="navbar-logo">
+              <img src="https://werstupid.netlify.app/images/company_logo.png" />
+            </Link>
+          </div>
 
-      <ul
-        className={menu ? "nav-links-mobile" : "nav-links"}
-        onClick={() => setMenu(false)}
-      >
-        <Link to="/blogData">
-          <li>Blog</li>
-        </Link>
-
-        <Link to="/about">
-          <li>About</li>
-        </Link>
-
-        <Link to="about">
-          <li>Online Training</li>
-        </Link>
-
-        <Link to="/about">
-          <li>Shop</li>
-        </Link>
-
-        <Link to="/about">
-          <li>Company</li>
-        </Link>
-
-        <Link to="/contact">
-          <li>Contact Us</li>
-        </Link>
-        <Link to="/contact">
-          <li className="btn">Login</li>{" "}
-        </Link>
-      </ul>
-      <button className="menu-icon" onClick={() => setMenu(!menu)}>
-        {menu ? (
-          <i className="fas fa-times"></i>
-        ) : (
-          <i className="fas fa-bars"></i>
-        )}
-      </button>
-    </nav>
+          <ul className={click ? "nav-menu active" : "navbar-menuItem"}>
+            <li className="nav-items">
+              <Link to="/blog" className="nav-links" onClick={closeMobileMenu}>
+                blog
+              </Link>
+            </li>
+            <li className="nav-items">
+              <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
+                about
+              </Link>
+            </li>
+            <li className="nav-items">
+              <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
+                online training
+              </Link>
+            </li>
+            <li className="nav-items">
+              <Link to="/shop" className="nav-links" onClick={closeMobileMenu}>
+                shop
+              </Link>
+            </li>
+            <li className="nav-items">
+              <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
+                company
+              </Link>
+            </li>
+            <li className="nav-items">
+              <Link
+                to="/contact"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                contact us
+              </Link>
+            </li>
+            <Link to="/login">
+              <div className="navItems">
+                <button className="nav-btn">
+                  <span>login</span>
+                </button>
+              </div>
+            </Link>
+          </ul>
+          <div className="menu-icon" onClick={handleClick}>
+            <i className={click ? "fas fa-times" : "fas fa-bars"} />
+          </div>
+        </div>
+      </nav>
+    </div>
   );
 };
 
