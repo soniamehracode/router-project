@@ -31,3 +31,14 @@
 .nav-item li {
   padding: 18px;
 }
+@media screen and (max-width: 480px) {
+  .nav-container {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .nav-item {
+    display: flex;
+    align-items: center;
+  }
+}

@@ -8,7 +8,6 @@ import Shop from "./components/shop/Shop";
 import OnlineTraining from "./components/online/OnlineTraining";
 import Login from "./components/login/Login";
 import Home from "./pages/home/Home";
-import Footer from "./pages/footer/Footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -43,7 +42,6 @@ function App() {
             <Login />
           </Route>
         </Switch>
-        {/* <Footer /> */}
       </Router>
     </div>
   );

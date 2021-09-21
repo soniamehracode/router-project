@@ -99,7 +99,7 @@
   font-weight: 500;
   margin-top: 0.25rem;
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 480px) {
   .side-section {
     display: block;
   }
@@ -107,6 +107,10 @@
     padding-left: 50px;
     padding-right: 50px;
   }
+  .cont {
+    width: 100%;
+  }
+
   .sidebar {
     padding-top: 30px;
     padding-left: 50px;

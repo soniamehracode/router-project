@@ -65,30 +65,40 @@
   line-height: 1.25rem;
   margin-top: 0.75rem;
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 480px) {
   .wrs_container h1 {
-    margin-left: 50px;
+    margin-top: 5rem;
     font-size: 16px;
     font-weight: 700;
+    text-align: center;
   }
+
   .cards {
     margin-left: 50px;
     display: flex;
+    flex-direction: column;
     background-color: rgba(255, 255, 255);
   }
   .card-single {
+    width: 100%;
     padding: 25px;
+    display: flex;
   }
   .card-item {
     background-color: rgba(255, 255, 255);
   }
 }
-@media screen and (max-width: 750px) {
+/* @media screen and (min-width: 400px) {
+  .wrs_container h1 {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    font-size: 16px;
+    font-weight: 700;
+  }
   .cards {
     display: block;
   }
   .card-single {
     width: 100%;
-    padding: 25px;
   }
-}
+} */

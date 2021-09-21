@@ -7,7 +7,7 @@ const Contact = () => {
         <div className="container_item">
           <div>
             <div className="contact-list">
-              <h2 className="contact-heading">contact information</h2>
+              <h3 className="contact-heading">contact information</h3>
               <p className="contact-para">
                 Send us your message and we will get back to you within 24
                 hours.
