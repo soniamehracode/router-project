@@ -11,101 +11,149 @@ const Cards = () => {
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
     <div className="wrs_section_2 section_newpost">
       <div className="wrs_container">
-        <div className="cards_container">
-          <div className="ebook_card">
-            <h2>
-              ebooks<span>store</span>
-            </h2>
-            <div className="carosal_btn">
-              <button className="button">
-                <span>view all</span>
-              </button>
+        <div className="cards__container">
+          <div>
+            <div className="mango_card">
+              <h1>
+                ebook <span>store</span>
+              </h1>
+              <div className="carosal_btn">
+                <button>
+                  <span>view all</span>
+                </button>
+              </div>
             </div>
           </div>
 
-          <div className="post-wrapper">
+          <div className="post-wrappers">
             <Slider {...settings}>
-              <div className="post_card_section">
-                <div className="post_section">
-                  <img src="https://cdn.pixabay.com/photo/2016/11/29/06/16/kindle-1867751__480.jpg" />
-                  <div className="post_info">
-                    <h2>Born to Move</h2>
-                    <span className="post_span">$59.00</span>
-                    <span className="post_info_span"> Genisis Member : 0</span>
+              <div className="card-wrap">
+                <div className="posts">
+                  <img
+                    className="card__img"
+                    src="https://cdn.pixabay.com/photo/2020/12/06/16/16/cosmos-5809271__480.png"
+                  />
+                  <div className="card__body">
+                    <h2>Shiljeet pro</h2>
+                    <span>$59.00</span>
                   </div>
-                  <div className="colm_section">
+                  <div className="card__price">
                     <span>
                       Add to cart
-                      <i className="fas fa-arrow-right"></i>
+                      <span className="card__price-span">
+                        <i className="fas fa-arrow-right"></i>
+                      </span>
                     </span>
                   </div>
                 </div>
               </div>
-              <div className="post_card_section">
-                <div className="post_section">
-                  <img src="https://cdn.pixabay.com/photo/2016/11/29/06/16/kindle-1867751__480.jpg" />
-                  <div className="post_info">
-                    <h2>Born to Move</h2>
-                    <span className="post_span">$59.00</span>
-                    <span className="post_info_span"> Genisis Member : 0</span>
+
+              <div className="card-wrap">
+                <div className="posts">
+                  <img
+                    className="card__img"
+                    src="https://cdn.pixabay.com/photo/2020/12/06/16/16/cosmos-5809271__480.png"
+                  />
+                  <div className="card__body">
+                    <h2>Shiljeet pro</h2>
+                    <span>$59.00</span>
                   </div>
-                  <div className="colm_section">
+                  <div className="card__price">
                     <span>
                       Add to cart
-                      <i className="fas fa-arrow-right"></i>
+                      <span className="card__price-span">
+                        <i className="fas fa-arrow-right"></i>
+                      </span>
                     </span>
                   </div>
                 </div>
               </div>
-              <div className="post_card_section">
-                <div className="post_section">
-                  <img src="https://cdn.pixabay.com/photo/2016/11/29/06/16/kindle-1867751__480.jpg" />
-                  <div className="post_info">
-                    <h2>Born to Move</h2>
-                    <span className="post_span">$59.00</span>
-                    <span className="post_info_span"> Genisis Member : 0</span>
+              <div className="card-wrap">
+                <div className="posts">
+                  <img
+                    className="card__img"
+                    src="https://cdn.pixabay.com/photo/2020/12/06/16/16/cosmos-5809271__480.png"
+                  />
+                  <div className="card__body">
+                    <h2>Shiljeet pro</h2>
+                    <span>$59.00</span>
                   </div>
-                  <div className="colm_section">
+                  <div className="card__price">
                     <span>
                       Add to cart
-                      <i className="fas fa-arrow-right"></i>
+                      <span className="card__price-span">
+                        <i className="fas fa-arrow-right"></i>
+                      </span>
                     </span>
                   </div>
                 </div>
               </div>
-              <div className="post_card_section">
-                <div className="post_section">
-                  <img src="https://cdn.pixabay.com/photo/2016/11/29/06/16/kindle-1867751__480.jpg" />
-                  <div className="post_info">
-                    <h2>Born to Move</h2>
-                    <span className="post_span">$59.00</span>
-                    <span className="post_info_span"> Genisis Member : 0</span>
+              <div className="card-wrap">
+                <div className="posts">
+                  <img
+                    className="card__img"
+                    src="https://cdn.pixabay.com/photo/2020/12/06/16/16/cosmos-5809271__480.png"
+                  />
+                  <div className="card__body">
+                    <h2>Shiljeet pro</h2>
+                    <span>$59.00</span>
                   </div>
-                  <div className="colm_section">
+                  <div className="card__price">
                     <span>
                       Add to cart
-                      <i className="fas fa-arrow-right"></i>
+                      <span className="card__price-span">
+                        <i className="fas fa-arrow-right"></i>
+                      </span>
                     </span>
                   </div>
                 </div>
               </div>
-              <div className="post_card_section">
-                <div className="post_section">
-                  <img src="https://cdn.pixabay.com/photo/2016/11/29/06/16/kindle-1867751__480.jpg" />
-                  <div className="post_info">
-                    <h2>Born to Move</h2>
-                    <span className="post_span">$59.00</span>
-                    <span className="post_info_span"> Genisis Member : 0</span>
+              <div className="card-wrap">
+                <div className="posts">
+                  <img
+                    className="card__img"
+                    src="https://cdn.pixabay.com/photo/2020/12/06/16/16/cosmos-5809271__480.png"
+                  />
+                  <div className="card__body">
+                    <h2>Shiljeet pro</h2>
+                    <span>$59.00</span>
                   </div>
-                  <div className="colm_section">
+                  <div className="card__price">
                     <span>
                       Add to cart
-                      <i className="fas fa-arrow-right"></i>
+                      <span className="card__price-span">
+                        <i className="fas fa-arrow-right"></i>
+                      </span>
                     </span>
                   </div>
                 </div>

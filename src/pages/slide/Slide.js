@@ -10,92 +10,150 @@ const Slide = (props) => {
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
     <div className="wrs_section_2 section_posts">
       <div className="wrs_container">
-        <div className="cards_container">
-          <div className="carosal_card">
-            <h2>
-              Merchandise<span>store</span>
-            </h2>
-            <div className="carosal_btn">
-              <button className="button">
-                <span>view all</span>
-              </button>
+        <div className="cards__container">
+          <div>
+            <div className="mango_card">
+              <h1>
+                mechandise <span>store</span>
+              </h1>
+              <div className="carosal_btn">
+                <button>
+                  <span>view all</span>
+                </button>
+              </div>
             </div>
           </div>
 
-          <div className="post-wrapper">
+          <div className="post-wrappers">
             <Slider {...settings}>
-              <div className="post_card">
-                <div className="post">
-                  <img src="https://cdn.pixabay.com/photo/2020/12/06/16/16/cosmos-5809271__480.png" />
-                  <div className="post_info">
-                    <h1>
-                      T-shirt <span>$59.00</span>
-                    </h1>
-                    <h3>
+              <div className="card-wrap">
+                <div className="posts">
+                  <img
+                    className="card__img"
+                    src="https://cdn.pixabay.com/photo/2020/12/06/16/16/cosmos-5809271__480.png"
+                  />
+                  <div className="card__body">
+                    <h2>Shiljeet pro</h2>
+                    <span>$59.00</span>
+                  </div>
+                  <div className="card__price">
+                    <span>
                       Add to cart
-                      <i className="fas fa-arrow-right"></i>
-                    </h3>
+                      <span className="card__price-span">
+                        <i className="fas fa-arrow-right"></i>
+                      </span>
+                    </span>
                   </div>
                 </div>
               </div>
-              <div className="post_card">
-                <div className="post">
-                  <img src="https://cdn.pixabay.com/photo/2020/12/06/16/16/cosmos-5809271__480.png" />
-                  <div className="post_info">
-                    <h1>
-                      T-shirt <span>$59.00</span>
-                    </h1>
-                    <h3>
+
+              <div className="card-wrap">
+                <div className="posts">
+                  <img
+                    className="card__img"
+                    src="https://cdn.pixabay.com/photo/2020/12/06/16/16/cosmos-5809271__480.png"
+                  />
+                  <div className="card__body">
+                    <h2>Shiljeet pro</h2>
+                    <span>$59.00</span>
+                  </div>
+                  <div className="card__price">
+                    <span>
                       Add to cart
-                      <i className="fas fa-arrow-right"></i>
-                    </h3>
+                      <span className="card__price-span">
+                        <i className="fas fa-arrow-right"></i>
+                      </span>
+                    </span>
                   </div>
                 </div>
               </div>
-              <div className="post_card">
-                <div className="post">
-                  <img src="https://cdn.pixabay.com/photo/2020/12/06/16/16/cosmos-5809271__480.png" />
-                  <div className="post_info">
-                    <h1>
-                      T-shirt <span>$59.00</span>
-                    </h1>
-                    <h3>
+              <div className="card-wrap">
+                <div className="posts">
+                  <img
+                    className="card__img"
+                    src="https://cdn.pixabay.com/photo/2020/12/06/16/16/cosmos-5809271__480.png"
+                  />
+                  <div className="card__body">
+                    <h2>Shiljeet pro</h2>
+                    <span>$59.00</span>
+                  </div>
+                  <div className="card__price">
+                    <span>
                       Add to cart
-                      <i className="fas fa-arrow-right"></i>
-                    </h3>
+                      <span className="card__price-span">
+                        <i className="fas fa-arrow-right"></i>
+                      </span>
+                    </span>
                   </div>
                 </div>
               </div>
-              <div className="post_card">
-                <div className="post">
-                  <img src="https://cdn.pixabay.com/photo/2020/12/06/16/16/cosmos-5809271__480.png" />
-                  <div className="post_info">
-                    <h1>
-                      T-shirt <span>$59.00</span>
-                    </h1>
-                    <h3>
+              <div className="card-wrap">
+                <div className="posts">
+                  <img
+                    className="card__img"
+                    src="https://cdn.pixabay.com/photo/2020/12/06/16/16/cosmos-5809271__480.png"
+                  />
+                  <div className="card__body">
+                    <h2>Shiljeet pro</h2>
+                    <span>$59.00</span>
+                  </div>
+                  <div className="card__price">
+                    <span>
                       Add to cart
-                      <i className="fas fa-arrow-right"></i>
-                    </h3>
+                      <span className="card__price-span">
+                        <i className="fas fa-arrow-right"></i>
+                      </span>
+                    </span>
                   </div>
                 </div>
               </div>
-              <div className="post_card">
-                <div className="post">
-                  <img src="https://cdn.pixabay.com/photo/2020/12/06/16/16/cosmos-5809271__480.png" />
-                  <div className="post_info">
-                    <h1>
-                      T-shirt <span>$59.00</span>
-                    </h1>
-                    <h3>
+              <div className="card-wrap">
+                <div className="posts">
+                  <img
+                    className="card__img"
+                    src="https://cdn.pixabay.com/photo/2020/12/06/16/16/cosmos-5809271__480.png"
+                  />
+                  <div className="card__body">
+                    <h2>Shiljeet pro</h2>
+                    <span>$59.00</span>
+                  </div>
+                  <div className="card__price">
+                    <span>
                       Add to cart
-                      <i className="fas fa-arrow-right"></i>
-                    </h3>
+                      <span className="card__price-span">
+                        <i className="fas fa-arrow-right"></i>
+                      </span>
+                    </span>
                   </div>
                 </div>
               </div>

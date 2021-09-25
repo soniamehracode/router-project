@@ -1,19 +1,52 @@
 .post-tag {
-  padding-left: 1.5rem;
-  padding-top: 1.5rem;
-  display: flex;
-  flex-direction: column;
+  font-size: 15px;
+  text-transform: capitalize;
+  line-height: 2rem;
+  padding-left: 20px;
+  padding-top: 30px;
 }
-.section_posts {
+
+.carosal_btn {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  bottom: 2rem;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+.button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  min-width: 9.375rem;
+  color: rgba(255, 255, 255);
+  background: #4f5be8;
+  border-radius: 1rem;
+  border: none;
+}
+.post-wrappers {
   width: 100%;
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 3.75rem;
-  padding-top: 3.75rem;
+  position: relative;
   overflow: hidden;
 }
-.post-tag h2 {
+.card-wrap {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.posts {
+  padding: 1.25rem;
+  width: 100%;
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 0.25rem;
+}
+.title-heading {
   color: rgba(55, 55, 55);
   line-height: 2rem;
   font-size: 1.5rem;
@@ -22,11 +55,10 @@
   font-weight: 600;
   text-transform: capitalize;
 }
-.post-tag span {
-  color: rgba(215, 215, 215);
-  font-weight: 500;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1rem;
+.cards__container {
+  display: flex;
+
+  overflow: hidden;
 }
 
 .mango_card {
@@ -40,9 +72,8 @@
   position: relative;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  flex: 1;
 }
-.mango_card img {
+.mango_card_img {
   width: 10rem;
   margin-left: auto;
   margin-right: auto;
@@ -79,42 +110,22 @@
   font-weight: 500;
   border-color: rgba(229, 231, 235);
 }
-
-.wrapper {
-  width: 80%;
-  position: relative;
-  flex: 2;
-  flex-wrap: wrap;
-}
-.cards__wrapper {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-.post-section {
-  padding: 1.25rem;
-  border-radius: 0.25rem;
-  width: 100%;
-  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.12);
-  transition: box-shadow 0.3s ease-in-out;
-}
-.post-section img {
+.posts img {
   object-fit: cover;
   width: 100%;
-  max-width: 100%;
   height: 9rem;
   margin-bottom: 1rem;
+  max-width: 100%;
 }
 .card__body {
   display: flex;
   flex-direction: column;
+  border-color: rgba(229, 231, 235);
 }
 .card__body h2 {
   color: rgba(55, 55, 55);
   font-size: 1.5rem;
   line-height: 2rem;
-  font-weight: 700;
 }
 .card__body span {
   color: rgba(183, 188, 191);
@@ -128,40 +139,43 @@
 .card__price span {
   color: rgba(113, 124, 255);
   font-size: 1rem;
-  font-weight: 700;
   line-height: 1.5rem;
   align-items: center;
-  cursor: pointer;
   display: flex;
+  cursor: pointer;
 }
-.card__price i {
+.price-span {
   margin-left: 0.75rem;
 }
-
-.cards__container {
-  display: flex;
-
-  flex-direction: row;
-  overflow: hidden;
-}
-.card__img {
-  width: 14rem;
-  height: 11rem;
-  object-fit: cover;
-}
-@media screen and (max-width: 850px) {
-  .section_posts {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+/* @media screen and (max-width: 720px) {
+  .post-wrappers {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
   }
-  .mango_card {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-  .cards__wrapper {
+  .card-wrap {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
-}
+  .posts {
+    padding: 1.25rem;
+  }
+} */
+/* @media screen and (max-width: 750px) {
+  post-wrappers {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .card-wrap {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  .posts {
+    padding: 1.25rem;
+  }
+} */

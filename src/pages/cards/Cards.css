@@ -59,70 +59,12 @@
   line-height: 1.5rem;
 }
 
-.post_wrapper {
-  display: flex;
-  width: 80%;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.post_card_section {
-  width: 20%;
-  margin-bottom: 10px;
-  transition: 0.3s;
-  padding: 10px;
-  border-color: rgba(229, 231, 235);
-}
-.post_section {
-  padding: 10px 10px;
-  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.12);
-  transition: box-shadow 0.3s ease-in-out;
-}
-.post_section img {
-  display: block;
-  object-fit: cover;
-  width: 100%;
-  height: 9rem;
-  margin-bottom: 1rem;
-  max-width: 100%;
-}
-.post_info {
-  padding: 10px 20px;
-  display: flex;
-  flex-direction: column;
+.post-tag {
+  font-size: 15px;
+  text-transform: capitalize;
   line-height: 2rem;
-}
-.post_info_span {
-  color: rgba(55, 55, 55);
-}
-.post_info h2 {
-  color: rgba(55, 55, 55);
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-.post_span {
-  color: rgba(183, 188, 191);
-  font-size: 18px;
-  font-weight: 400;
-}
-.colm_section {
-  /* padding: 10px 5px;
-  margin-top: 30px; */
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  margin-top: 1rem;
-}
-.colm_section span {
-  color: rgba(113, 124, 255);
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1.5rem;
-  align-items: center;
-  display: flex;
-}
-.colm_section i {
-  margin: 12px;
+  padding-left: 20px;
+  padding-top: 30px;
 }
 
 .carosal_btn {
@@ -132,4 +74,137 @@
   position: absolute;
   align-items: center;
   justify-content: center;
+}
+.button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  min-width: 9.375rem;
+  color: rgba(255, 255, 255);
+  background: #4f5be8;
+  border-radius: 1rem;
+  border: none;
+}
+.post-wrappers {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.card-wrap {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.posts {
+  padding: 1.25rem;
+  width: 100%;
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 0.25rem;
+}
+.title-heading {
+  color: rgba(55, 55, 55);
+  line-height: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.cards__container {
+  display: flex;
+
+  overflow: hidden;
+}
+
+.mango_card {
+  background-image: url("https://werstupid.netlify.app/images/background_poster_mango.jpg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  width: 16rem;
+  height: 18.75rem;
+  margin-right: 1rem;
+  position: relative;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.mango_card_img {
+  width: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 3rem;
+  max-width: 100%;
+  height: auto;
+}
+.carosal_btn {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  bottom: 2rem;
+  position: absolute;
+}
+.carosal_btn button {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  min-width: 9.375rem;
+  color: rgba(255, 255, 255);
+  background: #4f5be8;
+  border-radius: 0.5rem;
+  border: none;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+.carosal_btn span {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  border-color: rgba(229, 231, 235);
+}
+.posts img {
+  object-fit: cover;
+  width: 100%;
+  height: 9rem;
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
+.card__body {
+  display: flex;
+  flex-direction: column;
+  border-color: rgba(229, 231, 235);
+}
+.card__body h2 {
+  color: rgba(55, 55, 55);
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.card__body span {
+  color: rgba(183, 188, 191);
+}
+.card__price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.card__price span {
+  color: rgba(113, 124, 255);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+.price-span {
+  margin-left: 0.75rem;
 }

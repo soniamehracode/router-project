@@ -2,31 +2,34 @@
   display: flex;
   flex: 1;
 }
-.carosal_card {
-  background-image: url("https://werstupid.netlify.app/images/background_poster_merchandise.jpg");
+.ebook_card {
+  background-image: url("https://werstupid.netlify.app/images/background_poster_ebook.jpg");
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
   width: 16rem;
+
   height: 18.75rem;
   margin-right: 1rem;
   position: relative;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
-.carosal_card h2 {
+.ebook_card h2 {
   width: 10rem;
-  flex-direction: column;
   margin-left: auto;
   margin-right: auto;
+  font-size: 30px;
   display: flex;
+  flex-direction: column;
   margin-top: 3rem;
-  max-width: 100%;
   height: auto;
   line-height: 2rem;
+  color: #4f5be8;
+  text-transform: capitalize;
 }
-.carosal_card span {
-  text-align: center;
+.ebook_card span {
+  color: #000;
 }
 .carosal_btn {
   padding-left: 3rem;
@@ -36,7 +39,6 @@
   align-items: center;
   justify-content: center;
 }
-
 .button {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -56,55 +58,153 @@
   font-size: 1rem;
   line-height: 1.5rem;
 }
-.post-wrapper {
-  /* display: flex; */
-  width: 80%;
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 10px 0px 10px 0px;
+
+.post-tag {
+  font-size: 15px;
+  text-transform: capitalize;
+  line-height: 2rem;
+  padding-left: 20px;
+  padding-top: 30px;
 }
-.post_card {
-  width: 100%;
+
+.carosal_btn {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  bottom: 2rem;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+.button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
+  justify-content: center;
+  align-items: center;
   display: flex;
-  padding: 10px;
-  border-color: rgba(229, 231, 235);
+  min-width: 9.375rem;
+  color: rgba(255, 255, 255);
+  background: #4f5be8;
+  border-radius: 1rem;
+  border: none;
 }
-.post {
-  padding-left: 1.25rem;
+.post-wrappers {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.card-wrap {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.posts {
+  padding: 1.25rem;
   width: 100%;
   box-shadow: 0 2px 18px rgba(0, 0, 0, 0.12);
   transition: box-shadow 0.3s ease-in-out;
+  border-radius: 0.25rem;
 }
-.post img {
+.title-heading {
+  color: rgba(55, 55, 55);
+  line-height: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.cards__container {
   display: flex;
+
+  overflow: hidden;
+}
+
+.mango_card {
+  background-image: url("https://werstupid.netlify.app/images/background_poster_mango.jpg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  width: 16rem;
+  height: 18.75rem;
+  margin-right: 1rem;
+  position: relative;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.mango_card_img {
+  width: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 3rem;
+  max-width: 100%;
+  height: auto;
+}
+.carosal_btn {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  bottom: 2rem;
+  position: absolute;
+}
+.carosal_btn button {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  min-width: 9.375rem;
+  color: rgba(255, 255, 255);
+  background: #4f5be8;
+  border-radius: 0.5rem;
+  border: none;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+.carosal_btn span {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  border-color: rgba(229, 231, 235);
+}
+.posts img {
   object-fit: cover;
   width: 100%;
   height: 9rem;
   margin-bottom: 1rem;
   max-width: 100%;
-  padding-top: 10px;
-  padding-right: 10px;
 }
-.post_info h1 {
-  font-size: 22px;
+.card__body {
   display: flex;
-  line-height: 2rem;
   flex-direction: column;
+  border-color: rgba(229, 231, 235);
 }
-.post_info span {
-  color: #ccc;
-  font-size: 18px;
-  font-weight: 400;
+.card__body h2 {
+  color: rgba(55, 55, 55);
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
-.post_info h3 {
+.card__body span {
+  color: rgba(183, 188, 191);
+}
+.card__price {
   display: flex;
-  align-items: center;
   justify-content: center;
-  /* color: #4f5be8; */
-  margin-top: 20px;
-  cursor: pointer;
-  color: rgba(113, 124, 255);
+  align-items: center;
+  margin-top: 1rem;
 }
-.post_info i {
-  margin: 12px;
+.card__price span {
+  color: rgba(113, 124, 255);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+.price-span {
+  margin-left: 0.75rem;
 }
