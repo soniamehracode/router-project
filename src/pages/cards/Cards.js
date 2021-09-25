@@ -43,10 +43,13 @@ const Cards = () => {
       <div className="wrs_container">
         <div className="cards__container">
           <div>
-            <div className="mango_card">
-              <h1>
-                ebook <span>store</span>
-              </h1>
+            <div className="ebook_card">
+              <div className="ebook-title">
+                <h1>
+                  ebooks <span>store</span>
+                </h1>
+              </div>
+
               <div className="carosal_btn">
                 <button>
                   <span>view all</span>
@@ -54,17 +57,16 @@ const Cards = () => {
               </div>
             </div>
           </div>
-
           <div className="post-wrappers">
             <Slider {...settings}>
               <div className="card-wrap">
                 <div className="posts">
                   <img
                     className="card__img"
-                    src="https://cdn.pixabay.com/photo/2020/12/06/16/16/cosmos-5809271__480.png"
+                    src="https://cdn.pixabay.com/photo/2016/11/29/06/16/kindle-1867751__480.jpg"
                   />
                   <div className="card__body">
-                    <h2>Shiljeet pro</h2>
+                    <h3>born to move</h3>
                     <span>$59.00</span>
                   </div>
                   <div className="card__price">
@@ -82,10 +84,10 @@ const Cards = () => {
                 <div className="posts">
                   <img
                     className="card__img"
-                    src="https://cdn.pixabay.com/photo/2020/12/06/16/16/cosmos-5809271__480.png"
+                    src="https://cdn.pixabay.com/photo/2016/11/29/06/16/kindle-1867751__480.jpg"
                   />
                   <div className="card__body">
-                    <h2>Shiljeet pro</h2>
+                    <h3>born to move</h3>
                     <span>$59.00</span>
                   </div>
                   <div className="card__price">
@@ -102,10 +104,10 @@ const Cards = () => {
                 <div className="posts">
                   <img
                     className="card__img"
-                    src="https://cdn.pixabay.com/photo/2020/12/06/16/16/cosmos-5809271__480.png"
+                    src="https://cdn.pixabay.com/photo/2016/11/29/06/16/kindle-1867751__480.jpg"
                   />
                   <div className="card__body">
-                    <h2>Shiljeet pro</h2>
+                    <h3>born to move</h3>
                     <span>$59.00</span>
                   </div>
                   <div className="card__price">
@@ -122,10 +124,10 @@ const Cards = () => {
                 <div className="posts">
                   <img
                     className="card__img"
-                    src="https://cdn.pixabay.com/photo/2020/12/06/16/16/cosmos-5809271__480.png"
+                    src="https://cdn.pixabay.com/photo/2016/11/29/06/16/kindle-1867751__480.jpg"
                   />
                   <div className="card__body">
-                    <h2>Shiljeet pro</h2>
+                    <h3>born to move</h3>
                     <span>$59.00</span>
                   </div>
                   <div className="card__price">
@@ -142,10 +144,10 @@ const Cards = () => {
                 <div className="posts">
                   <img
                     className="card__img"
-                    src="https://cdn.pixabay.com/photo/2020/12/06/16/16/cosmos-5809271__480.png"
+                    src="https://cdn.pixabay.com/photo/2016/11/29/06/16/kindle-1867751__480.jpg"
                   />
                   <div className="card__body">
-                    <h2>Shiljeet pro</h2>
+                    <h3>born to move</h3>
                     <span>$59.00</span>
                   </div>
                   <div className="card__price">

@@ -42,10 +42,13 @@ const Slide = (props) => {
       <div className="wrs_container">
         <div className="cards__container">
           <div>
-            <div className="mango_card">
-              <h1>
-                mechandise <span>store</span>
-              </h1>
+            <div className="ebook_card">
+              <div className="ebook-title">
+                <h1>
+                  Merchandise <span>Store </span>
+                </h1>
+              </div>
+
               <div className="carosal_btn">
                 <button>
                   <span>view all</span>
@@ -63,7 +66,7 @@ const Slide = (props) => {
                     src="https://cdn.pixabay.com/photo/2020/12/06/16/16/cosmos-5809271__480.png"
                   />
                   <div className="card__body">
-                    <h2>Shiljeet pro</h2>
+                    <h2>Tshirt</h2>
                     <span>$59.00</span>
                   </div>
                   <div className="card__price">
@@ -84,7 +87,7 @@ const Slide = (props) => {
                     src="https://cdn.pixabay.com/photo/2020/12/06/16/16/cosmos-5809271__480.png"
                   />
                   <div className="card__body">
-                    <h2>Shiljeet pro</h2>
+                    <h2>Tshirt</h2>
                     <span>$59.00</span>
                   </div>
                   <div className="card__price">
@@ -104,7 +107,7 @@ const Slide = (props) => {
                     src="https://cdn.pixabay.com/photo/2020/12/06/16/16/cosmos-5809271__480.png"
                   />
                   <div className="card__body">
-                    <h2>Shiljeet pro</h2>
+                    <h2>Tshirt</h2>
                     <span>$59.00</span>
                   </div>
                   <div className="card__price">
@@ -124,7 +127,7 @@ const Slide = (props) => {
                     src="https://cdn.pixabay.com/photo/2020/12/06/16/16/cosmos-5809271__480.png"
                   />
                   <div className="card__body">
-                    <h2>Shiljeet pro</h2>
+                    <h2>Tshirt</h2>
                     <span>$59.00</span>
                   </div>
                   <div className="card__price">
@@ -144,7 +147,7 @@ const Slide = (props) => {
                     src="https://cdn.pixabay.com/photo/2020/12/06/16/16/cosmos-5809271__480.png"
                   />
                   <div className="card__body">
-                    <h2>Shiljeet pro</h2>
+                    <h2>Tshirt</h2>
                     <span>$59.00</span>
                   </div>
                   <div className="card__price">

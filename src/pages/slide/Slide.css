@@ -3,34 +3,45 @@
   flex: 1;
 }
 .ebook_card {
-  background-image: url("https://werstupid.netlify.app/images/background_poster_ebook.jpg");
+  background-image: url("https://werstupid.netlify.app/images/background_poster_merchandise.jpg");
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
   width: 16rem;
-
   height: 18.75rem;
   margin-right: 1rem;
   position: relative;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
-.ebook_card h2 {
-  width: 10rem;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 30px;
+.ebook-title {
   display: flex;
   flex-direction: column;
-  margin-top: 3rem;
-  height: auto;
-  line-height: 2rem;
-  color: #4f5be8;
+  justify-content: center;
+  align-items: center;
   text-transform: capitalize;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.ebook_card span {
+.ebook-title h1 {
+  color: rgba(113, 124, 255);
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  margin-top: 2.25rem;
+  flex-direction: column;
+  display: flex;
+}
+.ebook-title span {
   color: #000;
 }
+.carosal_btn {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  bottom: 2rem;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+
 .carosal_btn {
   padding-left: 3rem;
   padding-right: 3rem;

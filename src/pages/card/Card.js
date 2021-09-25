@@ -5,7 +5,9 @@ const Card = () => {
   return (
     <div className="wrs_section_1 section_universe">
       <div className="wrs_container">
-        <h1>the we r stupid universe</h1>
+        <div className="card-link">
+          <h1>the we r stupid universe</h1>
+        </div>
 
         <div className="cards">
           <div className="card-single">

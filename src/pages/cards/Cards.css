@@ -8,27 +8,29 @@
   background-position: 50%;
   background-size: cover;
   width: 16rem;
-
   height: 18.75rem;
   margin-right: 1rem;
   position: relative;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
-.ebook_card h2 {
-  width: 10rem;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 30px;
+.ebook-title {
   display: flex;
   flex-direction: column;
-  margin-top: 3rem;
-  height: auto;
-  line-height: 2rem;
-  color: #4f5be8;
+  justify-content: center;
+  align-items: center;
   text-transform: capitalize;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.ebook_card span {
+.ebook-title h1 {
+  color: rgba(113, 124, 255);
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  margin-top: 2.25rem;
+  flex-direction: column;
+  display: flex;
+}
+.ebook-title span {
   color: #000;
 }
 .carosal_btn {
@@ -122,27 +124,6 @@
   overflow: hidden;
 }
 
-.mango_card {
-  background-image: url("https://werstupid.netlify.app/images/background_poster_mango.jpg");
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: cover;
-  width: 16rem;
-  height: 18.75rem;
-  margin-right: 1rem;
-  position: relative;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-.mango_card_img {
-  width: 10rem;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  margin-top: 3rem;
-  max-width: 100%;
-  height: auto;
-}
 .carosal_btn {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -183,10 +164,11 @@
   flex-direction: column;
   border-color: rgba(229, 231, 235);
 }
-.card__body h2 {
+.card__body h3 {
   color: rgba(55, 55, 55);
-  font-size: 1.5rem;
   line-height: 2rem;
+  text-transform: capitalize;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .card__body span {
   color: rgba(183, 188, 191);
@@ -201,9 +183,12 @@
   color: rgba(113, 124, 255);
   font-size: 1rem;
   line-height: 1.5rem;
+  font-weight: 700;
   align-items: center;
   display: flex;
   cursor: pointer;
+  margin-left: 0.75rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .price-span {
   margin-left: 0.75rem;
