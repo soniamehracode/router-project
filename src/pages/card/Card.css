@@ -1,17 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 .card-link {
   padding-top: 30px;
+  padding-left: 1.5rem;
 }
 .section_universe {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
 .wrs_container h1 {
-  font-size: 25px;
+  /* font-size: 25px; */
   text-transform: capitalize;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -21,6 +18,8 @@
   margin-top: 20px;
   align-items: center;
   flex-wrap: wrap;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 .card-single {
   width: 14rem;

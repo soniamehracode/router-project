@@ -1,4 +1,4 @@
-import React from "./Card.css";
+import "./Card.css";
 import "../../App.css";
 
 const Card = () => {
