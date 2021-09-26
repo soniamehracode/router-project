@@ -30,7 +30,7 @@ const Feature_Section = () => {
                   <div className="log">
                     <span>MISC</span>
                   </div>
-                  <span className="span">10min</span>
+                  <span>10min</span>
                 </div>
               </div>
             </div>

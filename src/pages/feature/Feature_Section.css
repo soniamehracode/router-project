@@ -167,7 +167,9 @@
   .menuImg {
     width: 50%;
   }
-
+  .blog-span span {
+    display: block;
+  }
   .blog-span {
     justify-content: space-between;
     flex-direction: row;
@@ -178,6 +180,7 @@
   }
   .span {
     padding-right: 20px;
+    display: block;
   }
   .menuImg img {
     object-fit: cover;
@@ -185,6 +188,7 @@
   }
   .feature-heading {
     display: block;
+    font-size: 1rem;
   }
   .sidebar {
     padding-top: 30px;
@@ -214,8 +218,12 @@
     margin-top: 0.5rem;
     position: relative;
   }
+  .blog-span span {
+    display: block;
+  }
   .span {
     padding-right: 50px;
+    display: block;
   }
   .feature-blog {
     width: 70%;
@@ -233,6 +241,7 @@
   }
   .feature-heading {
     display: block;
+    font-size: 1rem;
   }
   .sidebar {
     padding-top: 50px;
