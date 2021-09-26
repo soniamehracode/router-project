@@ -193,3 +193,13 @@
 .price-span {
   margin-left: 0.75rem;
 }
+@media screen and (max-width: 850) {
+  .ebook_card {
+    display: none;
+  }
+}
+@media screen and (max-width: 480) {
+  .ebook_card {
+    display: none;
+  }
+}
