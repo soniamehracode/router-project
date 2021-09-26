@@ -147,35 +147,13 @@
 .price-span {
   margin-left: 0.75rem;
 }
-/* @media screen and (max-width: 720px) {
-  .post-wrappers {
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
+@media screen and (max-width: 850px) {
+  .mango_card {
+    display: none;
   }
-  .card-wrap {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+}
+@media screen and (max-width: 480px) {
+  .mango_card {
+    display: none;
   }
-  .posts {
-    padding: 1.25rem;
-  }
-} */
-/* @media screen and (max-width: 750px) {
-  post-wrappers {
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-  }
-  .card-wrap {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-  }
-  .posts {
-    padding: 1.25rem;
-  }
-} */
+}
