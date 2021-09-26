@@ -8,17 +8,19 @@ import Footer from "../../pages/footer/Footer";
 const Shop = () => {
   return (
     <div className="blog_container">
-      <h1 className="blog">Explore the We R Stupid Store</h1>
+      <div className="blog">
+        <h1>Explore the We R Stupid Store</h1>
+        <div className="form_input">
+          <div className="form-Data">
+            <form className="inputfeild">
+              <input type="text" placeholder="enter a word" />
 
-      <div className="form_input">
-        <div className="form-Data">
-          <form className="inputfeild">
-            <input type="text" placeholder="enter a word" />
-
-            <span>search</span>
-          </form>
+              <span>search</span>
+            </form>
+          </div>
         </div>
       </div>
+
       <HeaderSlider />
       <Shoppage />
       <Cards />
