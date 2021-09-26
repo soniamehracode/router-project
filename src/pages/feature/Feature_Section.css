@@ -99,13 +99,14 @@
   font-weight: 500;
   margin-top: 0.25rem;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 850px) {
   .side-section {
     flex-direction: row;
     display: flex;
+    padding-top: 30px;
   }
   .blog-post {
-    min-width: 50%;
+    width: 50%;
   }
   .cont {
     height: 25rem;
@@ -117,11 +118,12 @@
     font-size: 30px;
   }
   .side-section {
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
   }
   .blog-post {
-    width: 100%;
+    width: 50%;
   }
   .cont {
     width: 50%;

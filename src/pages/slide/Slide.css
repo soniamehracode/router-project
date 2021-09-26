@@ -219,12 +219,12 @@
 .price-span {
   margin-left: 0.75rem;
 }
-@media screen and (max-width: 850) {
+@media screen and (max-width: 850px) {
   .ebook_card {
     display: none;
   }
 }
-@media screen and (max-width: 480) {
+@media screen and (max-width: 480px) {
   .ebook_card {
     display: none;
   }
